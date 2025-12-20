@@ -29,7 +29,7 @@ public final class CaesarAlphabet {
     }
 
     public Character getCharByIndex(int index) {
-        if (index < 0 || index >= alphabetMap.size()) {
+        if (index < 0 || index >= alphabetArr.length) {
             throw new AlphabetException(String.format("некорректный индекс %d! Допустимое значение от: 0 до %d.",
                     index, alphabetArr.length - 1));
         }
